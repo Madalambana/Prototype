@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assist Neighbor</title>
+    <link href="{{url_for('static', path='/styles.css')}}", rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <h1>
+            From one hand to another
+        </h1>
+    </div>
+    <p>
+    Not all heros wear capes! Thank you lending a hand to those who need one.
+    End all Silnce and report any injustice being done to a felloW neighbor.
+            </p>
+    <br>
+    <img src="{{url_for('static', path='/megaphone.jpg')}}" alt="", height="500px", width="800px">
+            <p>
+                Please fill out the form below. The provide as much detail as you can.
+            </p>
+    <label for="Name">Name of person to be assisted:</label>
+            <input type="text" placeholder="Selene Ossas" name="Name">
+            <br>
+            <br>
+            <label for="no">Your cell number:</label>
+            <br>
+            <input type="text" placeholder="0712345678" name="no">
+            <br>
+            <br>
+            <label for="report">Report:</label>
+            <br>
+            <textarea name="report"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+</body>
+<div class="Trademark">
+    <footer>
+        Copyright &copy; 2022
+    </footer>
+    
+</div>
+</html>

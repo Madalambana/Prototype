@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Report GBV</title>
+        <link href="{{url_for('static', path='/styles.css')}}", rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="head">
+            <h1>Gender violence and domestic abuse</h1>
+        </div>
+        <div class="2">
+            <h3>
+                Excellent! You are one step away from ending the injustice done to you.
+            </h3>
+            <br>
+            <img src="{{url_for('static', path='/gbv.jpg')}}" alt="">
+            <p>
+                Please fill out the form below as possible you can. The more information the better 
+                we can assist you.
+            </p>
+        </div>
+        <br>
+
+        <form method="post">
+            <label for="firstName" >First Name:</label>
+            <input type="text" placeholder="Adonis" name="firstName">
+            <br>
+            <br>
+            <label for="lastName">Last Name</label>
+            <input type="text" placeholder="Smith" name="lastName">
+            <br>
+            <br>
+            <label for="eth">Ethicacy</label>
+            <input type="text" placeholder="Indian" name="eth">
+            <br>
+            <br>
+            <label for="pid">Identity Number</label>
+            <input type="text" placeholder="9912095432119" name="pid">
+            <br>
+            <br>
+            <label for="conNo">Cell Number</label>
+            <input type="text" placeholder="0712345678" name="conNo">
+            <br>
+            <br>
+            <label for="sex" >Gender</label>
+            <input type="text" placeholder="Male/Female" name="sex">
+            <br>
+            <br>
+            <label for="loc">Location</label>
+            <input type="text" placeholder="Address, City, Town" name="loc">
+            <br>
+            <br>
+            <label for="pos">Postal Code</label>
+            <input type="text" placeholder="9560" name="pos">
+            <br>
+            <br>
+            <label for="report">Report</label>
+            <textarea name="report"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+    <div class="Trademark">
+        <footer>
+            Copyright &copy; 2022
+        </footer>
+</html>
