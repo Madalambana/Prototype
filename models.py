@@ -16,6 +16,7 @@ class Molest(Base):
     location = Column(String)
     postal = Column(Integer)
     report = Column(String,nullable=False)
+    status = Column(String,nullable=False)
     created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('Now()'))
 
 class GBV(Base):
@@ -30,6 +31,7 @@ class GBV(Base):
     location = Column(String)
     postal = Column(Integer)
     report = Column(String,nullable=False)
+    status = Column(String,nullable=False)
     created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('Now()'))
 
 
@@ -41,4 +43,11 @@ class Assist(Base):
     postal = Column(Integer)
     contact = Column(Integer)
     report = Column(String,nullable=False)
+    status = Column(String,nullable=False)
     created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text('Now()'))
+
+class Admins(Base):
+    __tablename__ ="admins"
+    username = Column(String, nullable=False, primary_key=True)
+    email = Column(String, nullable=False, primary_key=True)
+    password = Column(String, nullable=False,)
